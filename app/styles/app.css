@@ -12,3 +12,18 @@ html, body, .main {
 .form-group {
   margin-bottom: 15pt;
 }
+
+header {
+  background: #333;
+  line-height: 60pt;
+  height: 60pt;
+  color: #fff;
+}
+
+.content {
+  padding: 15pt;
+}
+
+header h3 {
+  margin-left: 10pt;
+}
