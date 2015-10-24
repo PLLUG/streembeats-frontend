@@ -1,0 +1,23 @@
+{{outlet}}
+
+<div class="signup">
+  <h2 class="page-header">Sign up</h2>
+</div>
+
+<div>
+  <div class="facebook">
+    <a href="#" {{action 'signUpWithFacebook'}}>
+      Facebook
+    </a>
+  </div>
+
+  <div class="twitter">
+    <a href="#" {{action 'signUpWithTwitter'}}>
+      Twitter
+    </a>
+  </div>
+
+  <div class="or signin">
+    or {{#link-to 'account.signin'}}Sign in{{/link-to}}
+  </div>
+</div>
