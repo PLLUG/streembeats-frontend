@@ -2,15 +2,13 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   actions: {
-    signin() {
-      let username = this.controller.get('username');
-      let password = this.controller.get('password');
-
-      if (username && password) {
+    signInViaFacebook() {
+      this.get('session').open('facebook-oauth2').then(() => {
         this.transitionTo('index');
-      } else {
-        alert('error');
-      }
-    }
+      }, (error) => {
+        console.log(error);
+      });
+    },
+    signInViaTwitter() {}
   }
 });
