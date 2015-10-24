@@ -13,6 +13,15 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
+    torii: {
+      sessionServiceName: 'session',
+      providers: {
+        'facebook-oauth2': {
+          apiKey: '1219539724727839',
+          redirectUrl: '/account/signin'
+        }
+      }
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
