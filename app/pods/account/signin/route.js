@@ -13,8 +13,8 @@ export default Ember.Route.extend({
     signInViaTwitter() {
       this.get('session').open('twitter').then(() => {
         this.transitionTo('index');
-      }, (error) {
-        console.log('error');
+      }, (error) => {
+        console.log(error);
       });
     }
   }

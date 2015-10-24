@@ -19,6 +19,10 @@ module.exports = function(environment) {
         'facebook-oauth2': {
           apiKey: '1219539724727839',
           redirectUrl: '/account/signin'
+        },
+        'twitter': {
+          apiKey: '2414324321432432',
+          redirectUrl: '/account/signin'
         }
       }
     },
