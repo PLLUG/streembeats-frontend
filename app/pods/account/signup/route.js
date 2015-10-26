@@ -11,7 +11,7 @@ export default Ember.Route.extend({
 
   signUpWithTwitter() {
     this.get('session').open('twitter').then(() => {
-
+      this.transitionTo('index');
     }, (error) => {
       alert(error);
     });

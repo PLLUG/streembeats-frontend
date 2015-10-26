@@ -5,7 +5,7 @@
   font-family: sans-serif;
 }
 
-html, body, .main {
+html, body, .main, .ember-view, .ember-application {
   height: 100%;
 }
 
@@ -14,16 +14,17 @@ html, body, .main {
 }
 
 header {
-  background: #333;
   line-height: 60pt;
   height: 60pt;
-  color: #fff;
 }
 
 .content {
   padding: 15pt;
+	height: 100%;
 }
 
-header h3 {
+header h2 {
   margin-left: 10pt;
+	color: green;
+	text-transform: uppercase;
 }
