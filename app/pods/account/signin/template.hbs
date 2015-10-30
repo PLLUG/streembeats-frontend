@@ -1,23 +1,22 @@
 {{outlet}}
 
-<div class="signin">
-  <h2 class="page-header">Sign in</h2>
-</div>
-<div class="login">
-  <div class="facebook">
-    <a href="#" {{action 'signInViaFacebook'}}>
-      Facebook
-    </a>
+<div class="signin-block" style="background: url('bg.jpg')">
+  <div class="signin">
+    <h2 class="page-header">Sign in</h2>
   </div>
-  <div class="twitter">
-    <a href="#" {{action  'signInViaTwitter'}}>
-      Twitter
-    </a>
-  </div>
-
-  {{post-list}} sf{{/post-list}}
-
-  <div class="or signup">
-    or {{#link-to 'account.signup'}}Sign up{{/link-to}}
+  <div class="login">
+    <div class="signin-button">
+      <a href="#" class="facebook-button" {{action 'signInViaFacebook'}}>
+        Facebook
+      </a>
+    </div>
+    <div class="signin-button">
+      <a href="#" class="twitter-button" {{action  'signInViaTwitter'}}>
+        Twitter
+      </a>
+    </div>
+    <div class="or-link">
+      or {{#link-to 'account.signup'}}Sig up{{/link-to}}
+    </div>
   </div>
 </div>
