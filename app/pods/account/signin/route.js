@@ -1,6 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  model() {
+
+    
+  },
+
   actions: {
     signInViaFacebook() {
       this.get('session').open('facebook-oauth2').then(() => {
