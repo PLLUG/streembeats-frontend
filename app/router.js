@@ -10,6 +10,11 @@ Router.map(function() {
     this.route('signin', {});
     this.route('signup', {});
   });
+  this.route('genres', {}, function() {
+    this.route('genre', {path: ':id'});
+  });
+  this.route('artists', {}, function() {});
+  this.route('albums', {}, function() {});
 });
 
 export default Router;
