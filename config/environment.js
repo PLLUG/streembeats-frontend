@@ -3,7 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'streembeats-frontend',
-    podModulePrefix: 'streembeats-frontend/pods',
+    podModulePrefix: 'streembeats-frontend',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

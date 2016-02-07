@@ -1,6 +1,11 @@
 <aside class="main">
-  <header class="header">
-    <h1>Streembeats</h1>
+  <header class="navbar navbar-default">
+    <div class="navbar-header">
+      <h3 class="navbar-brand pull-left">
+        {{#link-to 'index'}}Streembeats{{/link-to}}
+      </h3>
+      {{st-navbar}}
+    </div>
   </header>
   <aside class="content container">
     {{outlet}}

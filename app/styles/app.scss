@@ -10,46 +10,12 @@ html, body {
   height: 100%;
 }
 
-header {
-  background: #15926c;
-  height: 60pt;
-  margin-bottom: 15pt;
+.pull-right {
+  float: right!important;
+}
 
-  h2 {
-    line-height: 60pt;
-    padding-left: 10pt;
-    font-weight: 400;
-    color: #fff;
-    width: 30%;
-    display: inline-block;
-
-  }
-
-  div.ember-view {
-    float: right;
-  }
-
-  nav {
-    float: right;
-    display: inline-block;
-    padding-right: 10pt;
-
-
-    li {
-      line-height: 60pt;
-      list-style: none;
-      margin-right: 10pt;
-      display: inline-block;
-
-      a {
-        color: #fff;
-      }
-
-      &:last-child {
-        margin-right: none;
-      }
-    }
-  }
+.pull-left {
+  float: left!important;
 }
 
 img {
