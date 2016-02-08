@@ -21,3 +21,26 @@ html, body {
 img {
   width: 100%;
 }
+
+.navbar {
+  &.navbar-custom {
+    background: #fff;
+    box-shadow: 0 0 0 3px #ccc;
+    border-radius: 0;
+  }
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+
+  a {
+    font-weight: 600;
+    padding: 20px 0;
+  }
+}
+
+nav li:first-child {
+  margin-left: 0;
+}
