@@ -1,12 +1,23 @@
-App.Album = DS.Model.extend({
-	title: DS.attr('string'),
-	artist: DS.belongsTo('artist'),
-	songs: DS.hasMany('song', {async: true}),
-	image: DS.attr('string'),
-	year: DS.attr('number')
+import DS from 'ember-data';
+
+const {
+  Model,
+  attr,
+  hasMany,
+  belongsTo
+} = DS;
+
+let Album = Model.extend({
+	title: attr('string'),
+	artist: belongsTo('artist'),
+	songs: hasMany('song', {async: true}),
+	image: attr('string'),
+	year: attr('number'),
 });
 
-App.Album.FIXTURES = [
+export default Album;
+
+Album.FIXTURES = [
 	{
 		id: 1,
 		title: 'Abbey Road',

@@ -1,9 +1,19 @@
-App.Song = DS.Model.extend({
-	title: DS.attr('string'),
-	album: DS.belongsTo('album')
+import DS from 'ember-data';
+
+const {
+  Model,
+  attr,
+  belongsTo
+} = DS;
+
+let Song = Model.extend({
+	title: attr('string'),
+	album: belongsTo('album')
 });
 
-App.Song.FIXTURES = [
+export default Song;
+
+Song.FIXTURES = [
 	{
 		id: 101,
 		title: 'Oh! Darling',

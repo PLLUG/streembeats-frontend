@@ -1,9 +1,19 @@
-App.Artist = DS.Model.extend({
-	name: DS.attr('string'),
-	albums: DS.hasMany('album', {async: true})
+import DS from 'ember-data';
+
+const {
+  Model,
+  attr,
+  hasMany
+} = DS;
+
+let Artist = Model.extend({
+	name: attr('string'),
+	albums: hasMany('album', {async: true})
 });
 
-App.Artist.FIXTURES = [
+export default Artist;
+
+Artist.FIXTURES = [
 	{
 		id: 10,
 		name: 'The Beatles',
