@@ -15,8 +15,6 @@ let Album = Model.extend({
 	year: attr('number'),
 });
 
-export default Album;
-
 Album.FIXTURES = [
 	{
 		id: 1,
@@ -26,4 +24,6 @@ Album.FIXTURES = [
 		image: 'AbbeyRoad.jpg',
 		year: 1969
 	}
-]
+];
+
+export default Album;

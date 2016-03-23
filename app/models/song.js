@@ -11,8 +11,6 @@ let Song = Model.extend({
 	album: belongsTo('album')
 });
 
-export default Song;
-
 Song.FIXTURES = [
 	{
 		id: 101,
@@ -24,4 +22,6 @@ Song.FIXTURES = [
 		title: 'Octopus\'s Garden',
 		album: 1
 	}
-]
+];
+
+export default Song;

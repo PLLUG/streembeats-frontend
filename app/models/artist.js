@@ -11,12 +11,12 @@ let Artist = Model.extend({
 	albums: hasMany('album', {async: true})
 });
 
-export default Artist;
-
 Artist.FIXTURES = [
 	{
 		id: 10,
 		name: 'The Beatles',
 		albums: [1]
 	}
-]
+];
+
+export default Artist;
