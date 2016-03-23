@@ -15,15 +15,17 @@ let Album = Model.extend({
 	year: attr('number'),
 });
 
-Album.FIXTURES = [
-	{
-		id: 1,
-		title: 'Abbey Road',
-		artist: 10,
-		songs: [101, 102],
-		image: 'AbbeyRoad.jpg',
-		year: 1969
-	}
-];
+Album.reopenClass({
+	FIXTURES: [
+		{
+			id: 1,
+			title: 'Abbey Road',
+			artist: 10,
+			songs: [101, 102],
+			image: 'AbbeyRoad.jpg',
+			year: 1969
+		}
+	]
+});
 
 export default Album;
