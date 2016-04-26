@@ -16,7 +16,7 @@ Router.map(function() {
   this.route('artists', {}, function() {});
   this.route('albums', {}, function() {
     this.route('new');
- this.route('show', { path: ':id' });
+    this.route('show', { path: ':id' });
   });
 });
 

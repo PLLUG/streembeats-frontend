@@ -8,6 +8,7 @@ const {
 } = DS;
 
 let Album = Model.extend({
+	id: attr('number'),
 	title: attr('string'),
 	artist: belongsTo('artist'),
 	songs: hasMany('song', {async: true}),

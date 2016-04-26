@@ -11,19 +11,19 @@ let Song = Model.extend({
 	album: belongsTo('album')
 });
 
-Song.reopenClass({
-	FIXTURES: [
-		{
-			id: 101,
-			title: 'Oh! Darling',
-			album: 1
-		},
-		{
-			id: 102,
-			title: 'Octopus\'s Garden',
-			album: 1
-		}
-	]
-});
+// Song.reopenClass({
+// 	FIXTURES: [
+// 		{
+// 			id: 101,
+// 			title: 'Oh! Darling',
+// 			album: 1
+// 		},
+// 		{
+// 			id: 102,
+// 			title: 'Octopus\'s Garden',
+// 			album: 1
+// 		}
+// 	]
+// });
 
 export default Song;
