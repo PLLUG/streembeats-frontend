@@ -1,5 +1,3 @@
-export default function() {
-
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
@@ -72,27 +70,19 @@ export default function() {
     });
 
   */
-}
 
 /*
 You can optionally export a config that is only loaded during tests
 export function testConfig() {
 
 }
-*/export default function() {
-  this.get('/albums', function() {
-    return {
-      data: [{
-        type: 'albums',
-        id: 1,
-        attributes: {
-          title: 'Abbey Road',
-          artist: 10,
-          songs: [101, 102],
-          image: '/images/AbbeyRoad.jpg',
-          year: 1969
-        }
-      }]
-    };
-  });
+*/
+export default function() {
+  this.get('/albums', function(db, request) {
+      return {
+        data: db.albums.map(attrs => (
+        {type: 'albums', id: attrs.id, attributes: attrs }
+    ))
+  };
+});
 }
