@@ -12,20 +12,7 @@ let Album = Model.extend({
 	artist: belongsTo('artist'),
 	songs: hasMany('song', {async: true}),
 	image: attr('string'),
-	year: attr('number'),
-});
-
-Album.reopenClass({
-	FIXTURES: [
-		{
-			id: 1,
-			title: 'Abbey Road',
-			artist: 10,
-			songs: [101, 102],
-			image: 'AbbeyRoad.jpg',
-			year: 1969
-		}
-	]
+	year: attr('number')
 });
 
 export default Album;

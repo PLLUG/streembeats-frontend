@@ -14,7 +14,10 @@ Router.map(function() {
     this.route('genre', {path: ':id'});
   });
   this.route('artists', {}, function() {});
-  this.route('albums', {}, function() {});
+  this.route('albums', {}, function() {
+    this.route('new');
+ this.route('show', { path: ':id' });
+  });
 });
 
 export default Router;
