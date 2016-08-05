@@ -3,27 +3,13 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'streembeats-frontend',
-    podModulePrefix: 'streembeats-frontend',
     environment: environment,
-    baseURL: '/',
+    rootURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
-      }
-    },
-    torii: {
-      sessionServiceName: 'session',
-      providers: {
-        'facebook-oauth2': {
-          apiKey: '1219539724727839',
-          redirectUrl: '/account/signin'
-        },
-        'twitter': {
-          apiKey: '2414324321432432',
-          redirectUrl: '/account/signin'
-        }
       }
     },
 
@@ -43,7 +29,6 @@ module.exports = function(environment) {
 
   if (environment === 'test') {
     // Testem prefers this...
-    ENV.baseURL = '/';
     ENV.locationType = 'none';
 
     // keep test console output quieter

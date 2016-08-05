@@ -1,16 +1,11 @@
-<aside class="main">
-  <header class="navbar navbar-custom">
-    <div class="navbar-header">
-      <h3 class="navbar-brand pull-left">
-        {{#link-to 'index'}}Streembeats{{/link-to}}
-      </h3>
-      {{st-navbar}}
-    </div>
+<div class="wrapper">
+  <header>
+    <h1 class="ui header purple">
+        StreamBeats
+    </h1>
   </header>
-  <aside class="content container">
-    {{outlet}}
-  </aside>
-  <footer class="footer">
-    &copy Streembeats team
+  <section class="container">{{outlet}}</section>
+  <footer>
+    @copy streambeats team
   </footer>
-</aside>
+</div>
